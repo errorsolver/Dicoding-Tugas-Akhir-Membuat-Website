@@ -1,0 +1,215 @@
+/* reset */
+h1,
+h2,
+h3,
+p,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* main */
+a {
+    text-decoration: none;
+}
+
+* {
+    border: 1px solid black;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+*>* {
+    padding: 4px;
+}
+
+body {
+    margin: auto;
+    width: 1000px;
+    background-color: rgb(95, 95, 95);
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+}
+
+header>nav>ul {
+    margin: 0 15rem;
+}
+
+header>nav>ul>li {
+    padding: 0;
+}
+
+header>form {
+    display: flex;
+    justify-content: end;
+}
+
+header>form>input:nth-child(1) {
+    width: 15%;
+}
+
+header>form>input:nth-child(2) {
+    width: auto;
+}
+
+body>main {
+    margin: .5rem 0;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main>* {
+    margin: 2px;
+}
+
+main>section {
+    flex: 5;
+}
+
+main>aside {
+    flex: 2;
+}
+
+section>nav>ul {
+    margin: auto;
+    width: 200px;
+}
+
+section>nav>ul>li {
+    padding: 0;
+}
+
+section>nav>ul>li>a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+
+}
+
+section>nav>ul>li>a>div {
+    margin: auto;
+    padding: 0;
+    width: 20px;
+    height: 25px;
+    line-height: 1.5em;
+}
+
+article {
+    display: flex;
+    margin: 5px 0;
+    flex-wrap: wrap;
+    flex-flow: row;
+    height: 200px;
+}
+
+article>img {
+    margin-right: 4px;
+    object-fit: cover;
+    aspect-ratio: 2/3;
+}
+
+article>div {
+    flex: 5;
+}
+
+aside>img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+aside>h2 {
+    text-align: center;
+}
+
+
+
+
+/* custom class */
+.gap {
+    margin-top: 5px;
+}
+
+.small-screen {
+    display: none;
+}
+
+.page-active {
+    background-color: grey;
+}
+
+
+
+
+/* screen */
+@media screen and (max-width: 1070px) {
+    body {
+        width: 668px;
+    }
+}
+
+@media screen and (max-width: 716px) {
+    body {
+        width: 460px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main>section {
+        flex: 1;
+        margin: 0;
+    }
+
+    main>aside {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 490px) {}
+
+@media screen and (max-width: 319px) {
+    * {
+        margin: 0;
+    }
+
+    body>*:not(.small-screen) {
+        display: none;
+    }
+
+    .small-screen {
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -150px;
+    }
+}
