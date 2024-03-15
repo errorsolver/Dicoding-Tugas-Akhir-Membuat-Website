@@ -6,64 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <link rel="icon" type="image/png" href="images/favicon/favicon.png">
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/color.css">
 </head>
 
 <body>
+    <!--#include file="etc/loading.html" -->
     <div class="small-screen">
         <h1>Need Bigger Screen!</h1>
     </div>
-    <header>
-        <h1>My Blog</h1>
+    <header class="primary-color">
+        <h1 class="secondary-color">My Blog</h1>
         <nav class="gap">
             <ul>
                 <li>
                     <a href="">
-                        <div>
-                            List Placeholder
-                        </div>
+                        List Placeholder
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <div>
-                            List Placeholder
-                        </div>
+                        List Placeholder
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <div>
-                            List Placeholder
-                        </div>
+                        List Placeholder
                     </a>
                 </li>
             </ul>
         </nav>
-        <p class="gap">Web description placeholder that containt information of this website.</p>
+        <marquee behavior="scroill" direction="left" height="" scrollamount="4px">
+            <p class="gap">Web description placeholder that containt information of this website.</p>
+        </marquee>
         <form>
             <input type="search" name="article" id="find-article" placeholder="Cari di sini...">
             <input type="submit" value="Cari">
         </form>
     </header>
     <main>
-        <section>
+        <section class="primary-color">
+            <h2 class="secondary-color">Article</h2>
             <!-- article list -->
-            <article>
+            <article class="tertiary-color">
                 <img src="" alt="Image Placeholder">
                 <div>
                     <h3 class="gap">Title Placeholder</h3>
                     <p class="gap">Paragraph Placeholder</p>
                 </div>
             </article>
-            <article>
+            <article class="tertiary-color">
                 <img src="" alt="Image Placeholder">
                 <div>
                     <h3 class="gap">Title Placeholder</h3>
                     <p class="gap">Paragraph Placeholder</p>
                 </div>
             </article>
-            <article>
+            <article class="tertiary-color">
                 <img src="" alt="Image Placeholder">
                 <div>
                     <h3 class="gap">Title Placeholder</h3>
@@ -102,18 +102,21 @@
             </nav>
         </section>
         <!-- profile -->
-        <aside>
-            <img src="" alt="Image Placeholder">
-            <h2 class="gap">Vincentius Hadianta Wibawa</h2>
-            <p class="gap">Male</p>
-            <p class="gap">20 Years Old</p>
-            <p class="gap">Jl. Jalan No 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000</p>
+        <aside class="primary-color">
+            <h2 class="secondary-color">About Me</h2>
+            <div class="gap">
+                <img src="" alt="Image Placeholder" class="gap">
+                <h2 class="gap">Vincentius Hadianta Wibawa</h2>
+                <p class="gap">Male</p>
+                <p class="gap">20 Years Old</p>
+                <p class="gap">Jl. Jalan No 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000</p>
+            </div>
         </aside>
     </main>
-    <footer>
+    <footer class="primary-color">
         <address>
-            <h2>Contact us</h2>
-            <p class="gap">Jl. jalan no 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000<br>
+            <h2 class="secondary-color">Contact us</h2>
+            <p class="gap tertiary-color">Jl. jalan no 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000<br>
                 myblog@mail.com</p>
         </address>
     </footer>
