@@ -1,0 +1,26 @@
+:root {
+    --cyan: #59D5E0;
+    --yellow: #F5DD61;
+    --orange: #FAA300;
+    --pink: #F4538A;
+}
+
+.primary-color {
+    background-color: var(--cyan);
+}
+
+.secondary-color {
+    background-color: var(--yellow);
+}
+
+.tertiary-color {
+    background-color: var(--orange);
+}
+
+.accent-color {
+    background-color: var(--pink);
+}
+
+a:hover {
+    background: var(--pink);
+}

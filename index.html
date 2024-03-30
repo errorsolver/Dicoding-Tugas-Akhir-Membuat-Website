@@ -6,114 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <link rel="icon" type="image/png" href="images/favicon/favicon.png">
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/color.css">
 </head>
 
-<body>
+<body class="flex-col">
+    <!--#include file="etc/loading.html" -->
     <div class="small-screen">
         <h1>Need Bigger Screen!</h1>
     </div>
-    <header>
-        <h1>My Blog</h1>
-        <nav class="gap">
+    <header class="flex-col primary-color">
+        <h1 class="secondary-color">My Blog</h1>
+        <nav class="">
             <ul>
                 <li>
                     <a href="">
-                        <div>
-                            List Placeholder
-                        </div>
+                        List Placeholder
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <div>
-                            List Placeholder
-                        </div>
+                        List Placeholder
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <div>
-                            List Placeholder
-                        </div>
+                        List Placeholder
                     </a>
                 </li>
             </ul>
         </nav>
-        <p class="gap">Web description placeholder that containt information of this website.</p>
-        <form>
+        <marquee behavior="scroill" direction="left" height="" scrollamount="4px">
+            <p class="">Web description placeholder that containt information of this website.</p>
+        </marquee>
+        <form class="flex-row">
             <input type="search" name="article" id="find-article" placeholder="Cari di sini...">
             <input type="submit" value="Cari">
         </form>
     </header>
-    <main>
-        <section>
+    <main class="">
+        <section class="flex-col primary-color">
+            <h2 class="secondary-color">Article</h2>
             <!-- article list -->
-            <article>
+            <article class="flex-row tertiary-color">
                 <img src="" alt="Image Placeholder">
-                <div>
-                    <h3 class="gap">Title Placeholder</h3>
-                    <p class="gap">Paragraph Placeholder</p>
+                <div class="article-desc flex-col">
+                    <h3 class="">Title Placeholder</h3>
+                    <p class="article-p">Paragraph Placeholder</p>
                 </div>
             </article>
-            <article>
+            <article class="flex-row tertiary-color">
                 <img src="" alt="Image Placeholder">
-                <div>
-                    <h3 class="gap">Title Placeholder</h3>
-                    <p class="gap">Paragraph Placeholder</p>
+                <div class="article-desc flex-col">
+                    <h3 class="">Title Placeholder</h3>
+                    <p class="article-p">Paragraph Placeholder
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsum perferendis fugiat iure
+                        doloremque minima quod odit aperiam fuga praesentium esse voluptatibus veniam, nisi hic iste
+                        reprehenderit vero atque natus!
+                        Officia perferendis, veniam laborum optio excepturi sed ipsum dolorum sequi quo ullam ut commodi
+                        quidem magnam asperiores eligendi aut. Culpa cupiditate quam beatae voluptatem molestias quaerat
+                        qui. Porro, voluptatem nemo.
+                        Ut sequi, quaerat officiis vitae, modi amet laboriosam fugit rerum nobis eos dolores beatae
+                        deleniti eius placeat ducimus doloremque quod perferendis corrupti voluptatum, praesentium
+                        tempore animi. Reiciendis, voluptatem architecto. Ex!
+                        Nam, recusandae. Quas nam saepe quasi molestiae eaque iure iusto fugiat, necessitatibus numquam
+                        nulla incidunt dicta quod rerum aut possimus repudiandae aperiam perferendis distinctio itaque
+                        sapiente at delectus aliquid! Quisquam?
+                        Odit eaque non natus. Eum distinctio alias sint officia rem tenetur sapiente, animi recusandae
+                        explicabo quos assumenda! Quas commodi alias distinctio mollitia laudantium, nihil praesentium
+                        itaque saepe repellat, fugit soluta!
+                        Hic saepe temporibus animi suscipit quo, inventore, architecto ullam sint tempora magnam iure.
+                        Dolorum ipsa aut beatae cum impedit omnis explicabo quo quibusdam delectus consequuntur optio
+                        facilis, tempora ducimus architecto.
+                        Obcaecati voluptatum ex et, pariatur sequi unde magnam fuga modi quas repellat quis? Laboriosam
+                        tempora sequi dignissimos maiores. Soluta veniam doloremque at laborum corrupti praesentium sint
+                        ullam vel tenetur quaerat!
+                        Excepturi quo nesciunt minus laudantium minima fuga alias exercitationem voluptates quisquam
+                        nostrum optio, pariatur vel aut similique nulla totam. Ab aperiam cum quae asperiores hic,
+                        tenetur consectetur sit a inventore!
+                        Tempore quis fugiat consequatur, beatae, non assumenda similique eius sed tenetur blanditiis
+                        quos reprehenderit! Doloremque, atque, saepe itaque commodi, repudiandae labore voluptate eaque
+                        vitae modi voluptatum aspernatur. At, optio pariatur?
+                        Voluptates eum reprehenderit aut sed? Minima, corrupti molestiae! Fugiat, labore alias nulla in
+                        rerum, praesentium ipsam voluptatum aliquid consequuntur architecto culpa? Quasi voluptate enim
+                        autem minima aut explicabo soluta ullam?
+                    </p>
                 </div>
             </article>
-            <article>
+            <article class="flex-row tertiary-color">
                 <img src="" alt="Image Placeholder">
-                <div>
-                    <h3 class="gap">Title Placeholder</h3>
-                    <p class="gap">Paragraph Placeholder</p>
+                <div class="article-desc flex-col">
+                    <h3 class="">Title Placeholder</h3>
+                    <p class="article-p">Paragraph Placeholder</p>
                 </div>
             </article>
             <!-- pagination -->
             <nav>
                 <ul>
                     <li><a href="">
-                            <div>
-                                &laquo;
-                            </div>
+                            <div>&laquo;</div>
                         </a></li>
                     <li class="page-active"><a href="">
-                            <div>
-                                1
-                            </div>
+                            <div>1</div>
                         </a></li>
                     <li><a href="">
-                            <div>
-                                2
-                            </div>
+                            <div>2</div>
                         </a></li>
                     <li><a href="">
-                            <div>
-                                3
-                            </div>
+                            <div>3</div>
                         </a></li>
                     <li><a href="">
-                            <div>
-                                &raquo;
-                            </div>
+                            <div>&raquo;</div>
                         </a></li>
                 </ul>
             </nav>
         </section>
         <!-- profile -->
-        <aside>
-            <img src="" alt="Image Placeholder">
-            <h2 class="gap">Vincentius Hadianta Wibawa</h2>
-            <p class="gap">Male</p>
-            <p class="gap">20 Years Old</p>
-            <p class="gap">Jl. Jalan No 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000</p>
+        <aside class="flex-col primary-color">
+            <h2 class="secondary-color">About Me</h2>
+            <div class="flex-col">
+                <img src="" alt="Image Placeholder" class="">
+                <h2 class="">Vincentius Hadianta Wibawa</h2>
+                <p class="">Male</p>
+                <p class="">20 Years Old</p>
+                <p class="">Jl. Jalan No 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000</p>
+            </div>
         </aside>
     </main>
-    <footer>
-        <address>
-            <h2>Contact us</h2>
-            <p class="gap">Jl. jalan no 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000<br>
+    <footer class="primary-color">
+        <address class="flex-col">
+            <h2 class="secondary-color">Contact us</h2>
+            <p class=" tertiary-color">Jl. jalan no 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000<br>
                 myblog@mail.com</p>
         </address>
     </footer>
