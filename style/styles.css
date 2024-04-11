@@ -15,6 +15,16 @@ body {
     background-color: rgb(95, 95, 95);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0 .2rem;
+}
+
 h1 {
     text-align: center;
 }
@@ -146,10 +156,6 @@ aside>div>h2 {
 
 .small-screen {
     display: none;
-}
-
-.page-active {
-    background-color: grey;
 }
 
 .flex-col {
