@@ -36,96 +36,41 @@
                 </li>
             </ul>
         </nav>
-        <!-- <marquee behavior="scroill" direction="left" height="" scrollamount="4px">
-            <p class="">Web description placeholder that containt information of this website.</p>
-        </marquee> -->
         <form class="flex-row">
             <input type="search" name="article" id="find-article" placeholder="Cari di sini...">
             <input type="submit" value="Cari" class="accent-color">
         </form>
     </header>
-    <main class="">
-        <section class="flex-col primary-color">
+    <!-- <main class="flex-row"> -->
+    <main>
+        <div class="content">
             <h2 class="secondary-color">Article</h2>
-            <!-- article list -->
-            <article class="flex-row tertiary-color">
-                <img src="" alt="Image Placeholder">
-                <div class="article-desc flex-col">
-                    <h3 class="">Kungfu Panda</h3>
-                    <p class="article-p">Paragraph Placeholder</p>
-                </div>
-            </article>
-            <article class="flex-row tertiary-color">
-                <img src="" alt="Image Placeholder">
-                <div class="article-desc flex-col">
-                    <h3 class="">Title Placeholder</h3>
-                    <p class="article-p">Paragraph Placeholder
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ipsum perferendis fugiat iure
-                        doloremque minima quod odit aperiam fuga praesentium esse voluptatibus veniam, nisi hic iste
-                        reprehenderit vero atque natus!
-                        Officia perferendis, veniam laborum optio excepturi sed ipsum dolorum sequi quo ullam ut commodi
-                        quidem magnam asperiores eligendi aut. Culpa cupiditate quam beatae voluptatem molestias quaerat
-                        qui. Porro, voluptatem nemo.
-                        Ut sequi, quaerat officiis vitae, modi amet laboriosam fugit rerum nobis eos dolores beatae
-                        deleniti eius placeat ducimus doloremque quod perferendis corrupti voluptatum, praesentium
-                        tempore animi. Reiciendis, voluptatem architecto. Ex!
-                        Nam, recusandae. Quas nam saepe quasi molestiae eaque iure iusto fugiat, necessitatibus numquam
-                        nulla incidunt dicta quod rerum aut possimus repudiandae aperiam perferendis distinctio itaque
-                        sapiente at delectus aliquid! Quisquam?
-                        Odit eaque non natus. Eum distinctio alias sint officia rem tenetur sapiente, animi recusandae
-                        explicabo quos assumenda! Quas commodi alias distinctio mollitia laudantium, nihil praesentium
-                        itaque saepe repellat, fugit soluta!
-                        Hic saepe temporibus animi suscipit quo, inventore, architecto ullam sint tempora magnam iure.
-                        Dolorum ipsa aut beatae cum impedit omnis explicabo quo quibusdam delectus consequuntur optio
-                        facilis, tempora ducimus architecto.
-                        Obcaecati voluptatum ex et, pariatur sequi unde magnam fuga modi quas repellat quis? Laboriosam
-                        tempora sequi dignissimos maiores. Soluta veniam doloremque at laborum corrupti praesentium sint
-                        ullam vel tenetur quaerat!
-                        Excepturi quo nesciunt minus laudantium minima fuga alias exercitationem voluptates quisquam
-                        nostrum optio, pariatur vel aut similique nulla totam. Ab aperiam cum quae asperiores hic,
-                        tenetur consectetur sit a inventore!
-                        Tempore quis fugiat consequatur, beatae, non assumenda similique eius sed tenetur blanditiis
-                        quos reprehenderit! Doloremque, atque, saepe itaque commodi, repudiandae labore voluptate eaque
-                        vitae modi voluptatum aspernatur. At, optio pariatur?
-                        Voluptates eum reprehenderit aut sed? Minima, corrupti molestiae! Fugiat, labore alias nulla in
-                        rerum, praesentium ipsam voluptatum aliquid consequuntur architecto culpa? Quasi voluptate enim
-                        autem minima aut explicabo soluta ullam?
-                    </p>
-                </div>
-            </article>
-            <article class="flex-row tertiary-color">
-                <img src="" alt="Image Placeholder">
-                <div class="article-desc flex-col">
-                    <h3 class="">Title Placeholder</h3>
-                    <p class="article-p">Paragraph Placeholder</p>
-                </div>
-            </article>
+            <section class="flex-row primary-color">
+                <!-- article list -->
+                <article class="flex-col secondary-color">
+                    <img src="images/food/rendang.avif" alt="Image Placeholder">
+                    <h3 class="">Rendang</h3>
+                </article>
+                <article class="flex-col secondary-color">
+                    <img src="images/food/pempek.avif" alt="Image Placeholder">
+                    <h3 class="">Pempek</h3>
+                </article>
+                <article class="flex-col secondary-color">
+                    <img src="images/food/nasigoreng.avif" alt="Image Placeholder">
+                    <h3 class="">Nasi Goreng</h3>
+                </article>
+            </section>
             <!-- pagination -->
-            <nav>
-                <ul>
-                    <li><a href="">
-                            <div>&laquo;</div>
-                        </a></li>
-                    <li class="page-active"><a href="">
-                            <div>1</div>
-                        </a></li>
-                    <li><a href="">
-                            <div>2</div>
-                        </a></li>
-                    <li><a href="">
-                            <div>3</div>
-                        </a></li>
-                    <li><a href="">
-                            <div>&raquo;</div>
-                        </a></li>
+            <nav class="secondary-color">
+                <ul id="pagination">
                 </ul>
             </nav>
-        </section>
+        </div>
         <!-- profile -->
         <aside class="flex-col primary-color">
             <h2 class="secondary-color">About Me</h2>
             <div class="flex-col">
-                <img src="" alt="Image Placeholder" class="">
+                <img src="./images/profile/profile.jpg" alt="Image Placeholder" class="">
                 <h2 class="">Vincentius Hadianta Wibawa</h2>
                 <p class="">Male</p>
                 <p class="">20 Years Old</p>
@@ -136,10 +81,11 @@
     <footer class="primary-color">
         <address class="flex-col">
             <h2 class="secondary-color">Contact us</h2>
-            <p class=" tertiary-color">Jl. jalan no 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000<br>
+            <p class="primary-color">Jl. jalan no 10 RT 001 / RW 001, Kota Semarang, Jawa Tengah, 1000<br>
                 myblog@mail.com</p>
         </address>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

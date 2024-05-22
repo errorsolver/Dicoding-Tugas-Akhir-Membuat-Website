@@ -4,7 +4,7 @@ a {
 }
 
 * {
-    border: 1px solid black;
+    border: 0px solid initial;
     border-radius: 3px;
     box-sizing: border-box;
 }
@@ -40,11 +40,11 @@ a {
 }
 
 header>nav>ul {
-    margin: 0 5rem;
+    /* margin: 0 5rem; */
 }
 
 header>nav>ul>li {
-    padding: 0;
+    padding: 2px 10px;
 }
 
 header>nav>ul>li>a {
@@ -78,10 +78,12 @@ nav>ul {
 main {
     display: flex;
     justify-content: space-evenly;
-    flex-shrink: auto;
+    width: 100%;
+    gap: 10px;
+    /* justify-content: space-between; */
 }
 
-main>section {
+main>div {
     flex: 5;
 }
 
@@ -89,27 +91,29 @@ main>aside {
     flex: 2;
 }
 
-/* section {
-    margin: 0;
-} */
+main>.content>section {
+    padding: .1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
-section>nav>ul {
+main>.content>section>article>h3 {
+    text-align: center;
+}
+
+.content>nav>ul {
     margin: auto;
     width: 200px;
 }
 
-section>nav>ul>li {
-    padding: 0;
-}
-
-section>nav>ul>li>a {
+.content>nav>ul>li>a {
     display: block;
     margin: auto;
     text-align: center;
     padding: 0;
 }
 
-section>nav>ul>li>a>div {
+.content>nav>ul>li>a>div {
     margin: auto;
     padding: 0;
     width: 20px;
@@ -118,18 +122,18 @@ section>nav>ul>li>a>div {
 }
 
 article {
-    margin: 0 .2rem;
     padding: .2rem;
+    width: 12rem;
 }
 
 article>img {
     object-fit: cover;
-    aspect-ratio: 2/3;
+    aspect-ratio: 3/2;
 }
 
-article>div {
+/* article>div {
     flex: 5;
-}
+} */
 
 aside>div {
     margin: 0 .2rem;
@@ -145,14 +149,6 @@ aside>div>img {
 aside>div>h2 {
     text-align: center;
 }
-
-
-
-
-/* custom class */
-/* .gap {
-    margin-top: 5px;
-} */
 
 .small-screen {
     display: none;
@@ -199,19 +195,20 @@ aside>div>h2 {
         flex-direction: column;
     }
 
-    main>section {
-        flex: 1;
+    main>div>section {
+        /* flex: 1; */
         margin: 0;
     }
 
-    main>aside {
-        flex: 1;
-    }
+    /* main>aside {
+        flex: 5;
+    } */
 }
 
 /* @media screen and (max-width: 490px) {} */
 
-@media screen and (max-width: 319px) {
+/* @media screen and (max-width: 425px) { */
+@media screen and (max-width: 320px) {
     * {
         margin: 0;
     }
